@@ -1,0 +1,94 @@
+;;root {
+
+}
+
+body {
+    margin: 1rem 2rem;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+header {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* -- user input section -- */
+label {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(45deg, rgb(128, 255, 212, .6), rgb(221, 160, 221, .6));
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.play1 > * + *, .play2 > * + * {
+    align-self: center;
+}
+
+.play1, .play2 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 1rem;
+}
+
+.play2 {
+    display: none;
+    margin-top: 2rem;
+}
+
+input, select {
+    font-size: 1rem;
+    text-align: center;
+    max-width: 70%;
+    border: outset;
+    border-radius: 8px;
+    background: linear-gradient(45deg, rgb(128, 255, 212, .3), rgb(221, 160, 221, .3));;
+}
+
+select {
+    margin-left: 1rem;
+}
+
+.startDiv {
+    display: flex;
+    justify-content: center;
+}
+
+/* -- gameBoard section -- */
+.gameBoard {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(3, 5rem);
+    grid-template-rows: repeat(3, 5rem);
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.gameTile {
+    background-color: rgb(243, 201, 147, .8);
+}
+
+.resetBox{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+/* button styles */
+.startGame, .resetButton {
+    padding: .5rem 1rem;
+    color: red;
+    font-size: 1.4rem;
+    background: linear-gradient(90deg, rgb(128, 255, 212, .6), rgb(221, 160, 221, .6));
+    border-radius: 12px;
+    border: outset;
+    margin: 1rem 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}

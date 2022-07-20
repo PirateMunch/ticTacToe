@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>Tic Tac Toe</header>
+        <main>
+            <section>
+                <div id="playSelect">
+                    <div class="play1">
+                        <div class="playlabel">
+                        <label for="player1">Player 1</label>
+                        </div>
+                        <input type="text" class="player" id="player1" placeholder="enter your name!">
+                        <select onchange="this.dataset.marker = this.value" name="icon1" id="player1select">
+                            <option value="">--choose icon--</option>
+                            <option value="X" class="x">X</option>
+                            <option value="O">O</option>
+                        </select>
+                    </div>
+                    <div class="play2">
+                        <div class="playlabel">
+                        <label for="player2" class="playlabel">Player 2</label>
+                        </div>
+                        <input type="text" class="player" id="player2" placeholder="computer">
+                        <select onchange="this.dataset.marker = this.value" name="icon2" id="player2select">
+                            <option value="">--choose icon--</option>
+                            <option value="X" class="x">X</option>
+                            <option value="O">O</option>
+                        </select>
+                    </div> 
+                </div>
+                <div class="startDiv">
+                <input type="button" id="startButton" class="startGame" value="Begin Game">
+                </div>
+            </section>
+            <div id="gameBoard" class="gameBoard">
+                <div class="gameTile" data-value="0"></div>
+                <div class="gameTile" data-value="1"></div>
+                <div class="gameTile" data-value="2"></div>
+                <div class="gameTile" data-value="3"></div>
+                <div class="gameTile" data-value="4"></div>
+                <div class="gameTile" data-value="5"></div>
+                <div class="gameTile" data-value="6"></div>
+                <div class="gameTile" data-value="7"></div>
+                <div class="gameTile" data-value="8"></div>
+            </div>
+            <div class="resetBox">
+            <input type="button" id="resetButton" class="resetButton" value="Reset">
+            </div>
+        </main>
+    <footer><span>PirateMunch</span><span>The Odin Project</span></footer>
+</body>
